@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&family=Source+Code+Pro:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containor{
+   display: flex;
+}
+/* .sidebar{
+    background-color: rgba(0, 0, 0, 0.137);
+    top: 52px;
+    width: 3vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;  
+    left: 0;
+
+} */
+/* .sidebar nav{
+    margin-top: 465px;
+} */
+/* Style the sidebar links */
+/* .sidebar a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+
+    text-decoration: none;
+    transition: 0.5s;
+}
+.sidebar a i {
+    left: 10px;
+
+} */
+
+/* Change the color of the sidebar links on hover */
+/* .sidebar a:hover {
+    background: #ddd;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd, 0 0 25px #ddd, 0 0 40px #ddd;
+}  */
+.navbar
+{
+    background-color: #f5e7dd;
+    overflow: hidden;
+    position: fixed; 
+    top: 0px;
+    text-align: right;
+    left: 0px;
+    width: 100%; 
+    height: 7vh;
+    z-index: 1;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 12px 0;
+}
+
+/* Style the navbar links and align them to the left */
+.navbar a {
+    float: left;
+    position: relative;
+    display: block;
+    color: gray;
+    text-align: left; /* Align text to the left */
+    padding: 4px 6px;
+    text-decoration: none;
+    transition: .5s;
+    letter-spacing: 4px;
+}
+
+/* Change the color of the navbar links on hover */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px #ddd,
+                0 0 25px #ddd,
+                0 0 50px #ddd;
+}
+.information
+{
+    /* background-color: yellow; */
+    width: 97vw;
+    height: 100vh;
+    padding: 0 40px;
+    margin-left: 3vw;
+    margin-top: 7vh;
+}
+.info
+{
+    /* background-color: blue; */
+    width: 70vw;
+    height: 70vh;
+    margin: 82px auto;
+    margin-left: 160px;
+    scroll-margin-top: 17vh;
+    display: flex;
+    justify-content: space-around;
+    animation: round 2.5s ease-in-out forwards ;
+    z-index: -1;
+}
+.start
+{
+    font-size: 40px;
+}
+.name
+{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+.brief{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* Buttons */
+.buttons
+{
+    margin-top: 34px;
+}
+.buttons button
+{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover
+{
+    color: dodgerblue;
+    background-color: white;
+}
+/* Interior word Styling*/
+.devinfo
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 160px;
+}
+/* Picture Styling */
+.devpic img
+{
+    width: 400px;
+    height: 60vh;
+    padding-right: 23px;
+}
+
+.about1 {
+    /* background-color: blue;  */
+    scroll-margin-top: 8vh;
+    height: 150vh;
+    width: 75vw;
+    margin: 10px auto;
+      padding: 0 25px;
+      display: block;
+  } 
+ 
+  .about1 h1{
+      /* background-color: aqua;  */
+      font-size: 40px;
+      border-bottom: 2px solid #333;
+      text-align: center;
+     height: 10vh;
+     padding: 10px;
+   }
+ 
+  .about1 p{
+      font-size: 18px;
+     padding: 5px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 80%;
+     padding: 10px;
+     font-family: 'Lucida Sans Unicode';
+    }
+  .deveduc{
+
+      scroll-margin: 4vh;
+    }
+    .devabout {
+        /* background-color: blue; */
+        height: 80vh;
+        width: 80vw;
+        margin: 100px auto;
+        padding: 0 34px;
+    }
+    
+  .devabout h1{
+      margin: 10px 0;
+     font-size: 40px;
+     border-bottom: 2px solid #333;
+     padding: 40px;
+     text-align: center;
+   }
+ 
+   .devabout p{
+     font-size: 18px;
+     font-family: 'Lucida Sans Unicode';
+     padding: 10px;
+     margin: 10px;
+  }
+  .devproj
+  {
+      
+      scroll-margin-top: 4vh;
+    }
+    
+    .project {
+    /* background-color: blue;*/
+      height: 90%;
+      width: 75vw;
+      margin: 100px auto;
+      padding: 0 40px;
+  }
+  
+  .project h1{
+      margin: 10px 0;
+      font-size: 40px;
+      border-bottom: 2px solid #333;
+     padding: 40px;
+     text-align: center;
+   }
+ 
+   .project li{
+       font-size: 18px;
+       font-family: 'Lucida Sans Unicode';
+    }
+
+  .projects img 
+ {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 35px;
+}
+ .projects iframe
+ {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+ .projects p
+ {
+    font-size: 18px;
+    font-family: 'Lucida Sans Unicode';
+ }
+
+ .projects li {
+    list-style: none;
+    font-weight: bold;
+}
+/* Changing the side bar buttons from links to normal format*/
+.projects li a
+{
+    text-decoration: none;
+    color: black;
+}
+/* Styling the side bar buttons*/
+.projects li a:hover
+{
+    color: grey;
+}
+.link1, .link2, .link3, .link4
+{
+    text-decoration-line: underline;
+}
+.devskill
+{
+    scroll-margin-top: 10vh;
+}
+
+.skill {
+    /* background-color: blue;*/
+    height: 160vh;
+    width: 80vw;
+    padding: 0 34px;
+      scroll-margin: 8vh;
+  }
+ 
+  .skill h1{
+     margin: 10px 0;
+     font-size: 40px;
+     border-bottom: 2px solid #333;
+     padding-bottom: 0.5rem;
+     text-align: center;
+    }
+    .skill h2{
+        content: '';
+        display: block;
+        margin: auto;
+        width: 50%;
+        font-size: 32px;
+        width: fit-content; 
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
+        align-content: center;
+   }
+ 
+  .skill li{
+     font-size: 18px;
+     font-family: 'Lucida Sans Unicode';
+    }
+    
+  
+    .contactform
+    {
+    padding: 20px 25px 100px;
+    /* padding-top: 130px; */
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 510;
+    font-size: 18px;
+    height: 62vh;
+    display: flex;
+    margin-left: 10vw;
+    justify-content: space-around;
+}
+.contactform h1
+{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+    flex-direction: column;
+}
+
+.contactform form div
+{
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input
+{
+    width: 30vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+#emailHelp
+{
+    font-size: 12px;
+    text-decoration-line: underline;
+    color: navy;
+    margin: 0 5px;
+}
+#form-check
+{
+    flex-direction: row;
+}
+#form-check input
+{
+    width: 16px;
+    margin: 3px 0;
+}
+
+/* Sumbit Button*/
+#buttons
+{padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(46, 154, 211);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+#buttons:hover{
+    color: rgb(46, 154, 211);
+    background-color: white;
+}
+
+/* Picture Styling */
+.devpics img
+{
+    width: 376px;
+    height: 51vh;
+    padding-right: 100px;
+}
+
+#msg
+{
+    color: #fcbe05;
+    margin-top: -10px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/* Add this code at the end of your existing CSS */
+
+/* Responsive styles for screens smaller than 768px */
+/* Existing CSS styles up to the first media query remain unchanged */
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 1024px) {
+    .navbar ul li {
+        margin: 0.2rem 0.3rem; /* Further reduce margin between navbar items */
+        font-size:15px ;
+        justify-content: center;
+    }
+    
+    .buttons {
+        margin-top: 10px; /* Reduce top margin for buttons */
+    }
+    
+    .buttons button {
+        font-size: 14px; /* Further reduce font size for buttons */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+    
+    
+    .about1 h1
+    {
+        scroll-margin-top: 10vh;
+        font-size: 28px; /* Reduce font size for section headings */
+        height: 3vh;
+    }
+    .deveduc,.devproj
+    {
+        scroll-margin-top: 5vh;
+    }
+    .devproj{
+        height: auto;
+    }
+    .project h1,
+    .skill h1 {
+
+        font-size: 28px; /* Reduce font size for section headings */
+    }
+    
+    .about1 p,
+    .devabout p,
+    .projects p,
+    .skill li {
+        font-size: 25px; /* Further reduce font size for text */
+    }
+    .devabout
+    {
+        height: auto;
+    }
+    .deveduc
+    {
+        height: auto;
+        font-size: 34px;
+    }
+    
+    .contactform {
+        margin-left: 5%; /* Adjust left margin for the contact form */
+    }
+    .information {
+        margin: 30px 0px 0px; /* Remove left margin for the main content */
+        width: auto;
+        height: auto; /* Limit the maximum height of the container */
+        overflow: auto; /* Add scroll if content overflows */
+    }
+    
+    
+    .info {
+        scroll-margin-top: 8vh;
+        flex-direction: column; /* Stack elements vertically */
+        margin: 140px 114px 20px;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        text-align: center
+        
+    }
+    .devinfo{
+    scroll-margin-top: 10vh;
+    }
+    
+    .name {
+        font-size: 36px; /* Reduce font size for the name */
+    }
+    
+    .buttons {
+        margin-top: 20px; /* Reduce margin for buttons */
+    }
+    
+    .buttons button {
+        font-size: 16px; /* Reduce font size for buttons */
+    }
+    
+    .devpic img {
+        width: auto; /* Make the image responsive within its container */
+        height: auto;
+        padding-right: 0;
+    }
+    
+    .about1 {
+        width: auto; /* Make the about section full-width */
+        padding: 0 20px;
+        height: auto;
+        scroll-margin-top: 8vh;
+    }
+
+    .devabout p,
+    .devabout {
+        width: auto; /* Make text and container full-width */
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .project,
+    .projects img,
+    .projects iframe,
+    .projects p {
+        width: auto;
+        height: auto; /* Make project section and images full-width */
+        padding: 20px 20px;
+        font-size: 34px;
+    }
+    .devskill
+    {
+        height: auto;
+        scroll-margin-top: 8vh;
+    }
+    
+    .skill {
+        width: auto; /* Make skills section full-width */
+        padding: 0 20px;
+        height: auto;
+        
+    }
+    
+    .contactform {
+        flex-direction: column; /* Stack form elements vertically */
+        margin-left: 0;
+        height: auto;
+        font-size: 34px;
+    }
+    
+    .contactform form div input {
+        width: auto; /* Make form inputs full-width */
+
+    }
+    
+    .devpics img {
+        width: auto; /* Make the image responsive within its container */
+        height: auto;
+        margin: 0px 112px 0px;
+    }
+}
+
+@keyframes round
+{
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
