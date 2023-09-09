@@ -1,4 +1,4 @@
-# _portfolio.github.io
+# portfolio.github.io
 
 **HTML Structure:**
 
